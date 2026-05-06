@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        .crop {
+            border: 1px solid black;
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Select Crop</h2>
+
+<div class="crop" onclick="openCrop('paddy')">Paddy</div>
+<div class="crop" onclick="openCrop('tomato')">Tomato</div>
+<div class="crop" onclick="openCrop('chilli')">Chilli</div>
+<div class="crop" onclick="openCrop('sugarcane')">Sugarcane</div>
+
+<script>
+function openCrop(crop){
+    window.location.href = crop + ".html";
+}
+</script>
+
+</body>
+</html>
